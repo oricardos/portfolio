@@ -21,7 +21,7 @@ body {
   margin: auto; }
 
 aside {
-  background-color: rgba(153, 153, 153, 0.191);
+  background-color: #FFF;
   height: 100vh;
   width: 25%;
   position: fixed;
