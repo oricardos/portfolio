@@ -59,10 +59,17 @@ aside {
     padding: 0 8px; }
 
 main {
-  padding: 40px 0;
   width: 75%;
   float: right; }
-  main h1 {
-    color: #1C1D24;
+  main section.default {
+    padding: 40px 0; }
+  main h4 {
+    color: #EA2340;
     text-transform: uppercase;
-    margin-bottom: 20px; }
+    margin: 20px 0; }
+  main p {
+    color: #888; }
+  main .github {
+    margin-top: 20px; }
+  main .calendar-graph {
+    padding: 10px; }

@@ -58,12 +58,54 @@
 
     </aside>
     <main>
-      <div class="container">
-        <h1>sobre</h1>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum saepe quo vitae mollitia qui repellat optio rerum quas repudiandae fuga? Ducimus veniam quidem, itaque vitae facere dolore aspernatur ut? Est.
-        </p>
-      </div>
+      <section class="default">
+        <div class="container">
+          <h4>sobre</h6>
+            <p>
+              Olá, me chamo Luiz Ricardo Silva, tenho 26 anos, sou de Belo Horizonte.
+            </p>
+        </div>
+      </section>
+
+      <section class="default">
+        <div class="container">
+          <h4>open source</h4>
+          <p>Um pouco da minha contribuição com a comunidade</p>
+
+          <div class="github">
+            <!-- Include the library. -->
+          <script
+          src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js"
+          ></script>
+
+          <!-- Optionally, include the theme (if you don't want to struggle to write the CSS) -->
+          <link
+          rel="stylesheet"
+          href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css"
+          />
+
+          <!-- Prepare a container for your calendar. -->
+          <div class="calendar">
+            <!-- Loading stuff -->
+            Loading the data just for you.
+          </div>
+
+          <script>
+            GitHubCalendar(".calendar", "oricardos");
+            // or enable responsive functionality
+            GitHubCalendar(".calendar", "oricardos", { responsive: true });
+          </script>
+          </div>
+        
+        </div>
+      </section>
+
+      <section class="default">
+        <div class="container">
+          <h4>Formação</h4>
+        </div>
+      </section>
+
     </main>
   </body>
 </html>

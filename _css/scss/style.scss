@@ -98,13 +98,29 @@ aside {
 }
 
 main {
-    padding: $default;
     width: 75%;
     float: right;
 
-    h1 {
-        color: $black;
+    section.default {
+        padding: $default;
+    }
+
+    h4 {
+        color: $red;
         text-transform: uppercase;
-        margin-bottom: $title;
+        margin: $title 0;
+    }
+
+    p {
+        color: #888;
+    }
+
+    //github
+    .github {
+        margin-top: 20px;
+    }
+
+    .calendar-graph {
+        padding: 10px;
     }
 }
