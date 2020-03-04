@@ -1,5 +1,6 @@
 // colors
 $black: #1C1D24;
+$second-black: #1c1c1c;
 $red: #EA2340;
 $main-white: #FFF;
 $grey: rgba(153, 153, 153, 0.191);
@@ -9,6 +10,7 @@ $bold: 700;
 $default: 40px 0;
 
 $title: 20px;
+$subtitle: $second-black;
 
 * {
     margin: 0;
@@ -89,10 +91,23 @@ aside {
     }
 
     footer {
+        .icons {
+            justify-content: center;
+            align-items: center;
+        }
         .icon img {
             height: 24px;
             width: auto;
             padding: 0 8px;
+        }
+
+        p.p-aside-footer {
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        span {
+            color: $red;
         }
     }
 }
@@ -111,6 +126,10 @@ main {
         margin: $title 0;
     }
 
+    h5 {
+        color: $second-black;
+    }
+
     p {
         color: #888;
     }
@@ -123,4 +142,32 @@ main {
     .calendar-graph {
         padding: 10px;
     }
+
+    //formação
+    .formacao {
+        justify-content: space-between;
+        
+        h5 {
+            margin-bottom: 8px;
+        }
+    }
+
+    //conhecimentos 
+    .knowledges {
+        padding: 20px;
+
+        ul.main-ul {
+            color: $second-black;
+        }
+        ul.sub-ul {
+            margin-left: 20px;
+            font-size: 15px;
+            color: #999;
+        }
+
+        li {
+            margin: 10px 0;
+        }
+    }
+    
 }

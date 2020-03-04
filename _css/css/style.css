@@ -53,10 +53,18 @@ aside {
       color: #EA2340;
       text-decoration: none;
       font-weight: 700; }
+  aside footer .icons {
+    justify-content: center;
+    align-items: center; }
   aside footer .icon img {
     height: 24px;
     width: auto;
     padding: 0 8px; }
+  aside footer p.p-aside-footer {
+    text-align: center;
+    margin-top: 40px; }
+  aside footer span {
+    color: #EA2340; }
 
 main {
   width: 75%;
@@ -67,9 +75,25 @@ main {
     color: #EA2340;
     text-transform: uppercase;
     margin: 20px 0; }
+  main h5 {
+    color: #1c1c1c; }
   main p {
     color: #888; }
   main .github {
     margin-top: 20px; }
   main .calendar-graph {
     padding: 10px; }
+  main .formacao {
+    justify-content: space-between; }
+    main .formacao h5 {
+      margin-bottom: 8px; }
+  main .knowledges {
+    padding: 20px; }
+    main .knowledges ul.main-ul {
+      color: #1c1c1c; }
+    main .knowledges ul.sub-ul {
+      margin-left: 20px;
+      font-size: 15px;
+      color: #999; }
+    main .knowledges li {
+      margin: 10px 0; }
