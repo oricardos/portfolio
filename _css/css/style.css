@@ -84,6 +84,10 @@ main {
     margin-top: 20px; }
   main .calendar-graph {
     padding: 10px; }
+  main .contrib-number {
+    font-size: 15px;
+    color: #EA2340;
+    padding: 8px 0; }
   main .formacao {
     justify-content: space-between; }
     main .formacao h5 {
@@ -111,8 +115,8 @@ main {
   .container {
     padding: 20px; }
   .contrib-number {
-    font-size: 15px !important;
-    color: #EA2340 !important;
+    font-size: 15px;
+    color: #EA2340;
     padding: 8px 0; } }
 
 @media (min-width: 450px) and (max-width: 1300px) {

@@ -144,6 +144,12 @@ main {
         padding: 10px;
     }
 
+    .contrib-number {
+        font-size: 15px;
+        color: $red;
+        padding: 8px 0;
+    }
+
     //formação
     .formacao {
         justify-content: space-between;
@@ -195,8 +201,8 @@ main {
     }
 
     .contrib-number {
-        font-size: 15px!important;
-        color: $red!important;
+        font-size: 15px;
+        color: $red;
         padding: 8px 0;
     }
 }
