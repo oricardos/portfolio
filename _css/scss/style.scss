@@ -185,6 +185,33 @@ main {
             margin: 10px 0;
         }
     }
+
+    //projetos
+    .projects-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+    }
+
+    .projects-grid li {
+        list-style: none;
+        text-align: center;
+    }
+
+    .projects-grid li span {
+        font-weight: bold;
+    }
+
+    .projects-grid li img {
+        width: 100%;
+        height: 250px;
+        object-fit: cover;
+        margin-bottom: 20px;
+    }
+
+
+
+
     
 }
 
@@ -198,17 +225,27 @@ main {
         section.default {
             padding: 0;
         }
+
+        .container {
+            padding: 20px;
+        }
+    
+        .contrib-number {
+            font-size: 15px;
+            color: $red;
+            padding: 8px 0;
+        }
+
+        .projects-grid {
+            grid-template-columns: 1fr;
+        }
+
+        .projects-grid li {
+            margin-bottom: 40px;
+        }
     }
 
-    .container {
-        padding: 20px;
-    }
-
-    .contrib-number {
-        font-size: 15px;
-        color: $red;
-        padding: 8px 0;
-    }
+    
 }
 
 @media (min-width: 450px) and (max-width: 1300px) {
