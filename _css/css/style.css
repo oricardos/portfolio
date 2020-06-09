@@ -83,7 +83,8 @@ main {
   main h5 {
     color: #1c1c1c; }
   main p {
-    color: #888; }
+    color: #888;
+    line-height: 26px; }
   main .github {
     margin-top: 20px; }
   main .calendar-graph {
