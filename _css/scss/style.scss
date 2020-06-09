@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto&display=swap');
+
 // colors
 $black: #1C1D24;
 $second-black: #1c1c1c;
@@ -20,9 +22,11 @@ $subtitle: $second-black;
 
 body {
     color: $black;
-    font: {
-        family: 'Lato', sans-serif;
-    }
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Roboto', sans-serif;
 }
 
 .d-flex {
