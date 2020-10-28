@@ -20,6 +20,10 @@ $subtitle: $second-black;
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     color: $black;
     font-family: 'Montserrat', sans-serif;
