@@ -1,11 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto&display=swap');
 
 // colors
-$black: #1C1D24;
-$second-black: #1c1c1c;
-$red: #EA2340;
-$main-white: #FFF;
-$grey: rgba(153, 153, 153, 0.191);
+    $black: #1C1D24;
+    $second-black: #1c1c1c;
+    $red: #dd1c1a;
+    $main-white: #FFF;
+    $grey: rgba(153, 153, 153, 0.191);
+
+    // dark-mode
+    $white-mode: #fff;
+    $black-mode: #1c1c1e;
 
 $bold: 700;
 
@@ -25,12 +29,18 @@ html {
 }
 
 body {
-    color: $black;
+    color: $white-mode;
     font-family: 'Montserrat', sans-serif;
 }
 
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Roboto', sans-serif;
+    color: $white-mode;
+}
+
+a {
+    color: $red;
+    text-decoration: none;
 }
 
 .d-flex {
@@ -51,7 +61,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 aside {
-    background-color: $main-white;
+    background-color: $black-mode;
     height: 100vh;
     width: 25%;
     position: fixed;
@@ -104,10 +114,15 @@ aside {
             justify-content: center;
             align-items: center;
         }
-        .icon img {
-            height: 24px;
-            width: auto;
+        .icon i {
+            font-size: 24px;
+            color: #fff;
             padding: 0 8px;
+            transition: all 300ms;
+        }
+
+        .icon i:hover {
+            color: $red;
         }
 
         p.p-aside-footer {
@@ -122,6 +137,7 @@ aside {
 }
 
 main {
+    background-color: $black-mode;
     width: 75%;
     float: right;
 
@@ -136,7 +152,7 @@ main {
     }
 
     h5 {
-        color: $second-black;
+        color: $white-mode;
     }
 
     p {
@@ -149,22 +165,13 @@ main {
         margin-top: 20px;
     }
 
-    .calendar-graph {
-        padding: 10px;
-    }
-
-    .contrib-number {
-        font-size: 18px;
-        color: $red;
-        padding: 8px 0;
-    }
-
     //formação
     .formacao {
         justify-content: space-between;
         
         h5 {
             margin-bottom: 8px;
+            color: $white-mode;
         }
     }
 
