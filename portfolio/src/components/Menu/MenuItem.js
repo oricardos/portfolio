@@ -1,9 +1,11 @@
-import style from './Menu.module.css';
+// import style from './Menu.module.css';
 
-export const MenuItem = ({text}) => {
+import { Link } from "react-router-dom"
+
+export const MenuItem = ({text, link}) => {
     return (
         <li className="ml-4">
-            {text}
+            <Link to={link}>{text}</Link>
         </li>
     )
 }
