@@ -1,5 +1,5 @@
-import { Container } from '../Container'
-import { Logo } from '../Logo'
+import { Container } from '../../Container'
+import { Logo } from '../../Logo'
 import { Menu } from '../Menu'
 import style from './Header.module.css'
 

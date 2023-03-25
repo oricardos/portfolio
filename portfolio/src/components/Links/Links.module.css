@@ -1,0 +1,7 @@
+.links {
+    transition: .2s ease-in-out;
+}
+
+.links:hover {
+    color: var(--gold)
+}

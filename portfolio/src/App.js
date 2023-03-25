@@ -4,11 +4,11 @@ import {
   Routes,
   Route,
 } from "react-router-dom";
-import { Projects } from "./components/Projects";
-import { Blog } from "./components/Blog";
-import { NotFound } from "./components/NotFound";
+import { Projects } from "./components/pages/Projects";
+import { NotFound } from "./components/pages/NotFound";
 import style from "./App.module.css";
 import { Home } from "./components/Home";
+import { Blog } from "./components/pages/Blog";
 
 function App() {
   return (

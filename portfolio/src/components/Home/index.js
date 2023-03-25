@@ -1,14 +1,15 @@
 import { Container } from "../Container"
-import { Footer } from "../Footer"
-import { Header } from "../Header"
+import { Footer } from "../Layout/Footer"
+import { Header } from "../Layout/Header"
+import { Hero } from "../Sections/Hero"
+import { About } from "../Sections/About"
 
 export const Home = () => {
     return (
         <>
             <Header />
-            <Container>
-                <h1>Home</h1>
-            </Container>
+            <Hero />
+            <About />
             <Footer />
         </>
     )

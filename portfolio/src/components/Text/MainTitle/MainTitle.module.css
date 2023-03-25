@@ -1,0 +1,6 @@
+.hero {
+    font-size: var(--font-size-hero);
+    line-height: var(--line-height-hero);
+    font-weight: 700;
+    margin-bottom: 24px;
+}

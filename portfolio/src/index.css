@@ -1,24 +1,30 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap');
 
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: 'Nunito', sans-serif;
+    font-family: 'Raleway', sans-serif;
 }
 
 :root {
     /* cores */
     --white: #F2F4F3;
     --black: #0A0908;
-    --gunmetal: #22333B;
+    --second-black: #0a0a0a;
+    --gold: #b69121;
 
     /* tamanho de fonte */
-    --font-size-small: 0.875rem; /* 14 pixels */
-    --font-size-medium: 1rem; /* 16 pixels */
-    --font-size-large: 1.5rem; /* 24 pixels */
-    --font-size-xlarge: 2rem; /* 32 pixels */
+    --font-size-small: 0.875rem; /* 14 px */
+    --font-size-medium: 1rem; /* 16 px */
+    --font-size-large: 1.5rem; /* 24 px */
+    --font-size-xlarge: 2rem; /* 32 px */
+    --font-size-hero: 3.25rem; /* 52 px*/
+
+    /* line height */
+    --line-height-hero: 3.813rem;
+
 }
