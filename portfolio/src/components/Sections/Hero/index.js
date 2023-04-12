@@ -7,7 +7,7 @@ import { Section } from "../../Layout/Section"
 export const Hero = () => {
   return (
     <Section>
-      <div className="flex gap-x-6 items-center">
+      <div className={`${styles.wrapper} flex gap-x-6 items-center`}>
         <div>
           <MainTitle />
           <Summary />

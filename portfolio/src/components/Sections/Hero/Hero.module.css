@@ -1,3 +1,7 @@
+.wrapper {
+    height: calc(100vh - 128px);
+}
+
 .imgHero {
     width: 100%;
     height: 100%;

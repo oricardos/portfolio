@@ -4,8 +4,8 @@ import styles from "./About.module.css";
 
 export const About = () => {
   return (
-    <div className={styles.wrapper}>
-      <Section bg>
+    <Section bg>
+      <div className={styles.wrapper}>
         <SectionTitle title="Sobre Mim" />
 
         <p>
@@ -18,7 +18,7 @@ export const About = () => {
           Suspendisse potenti. Ut semper sagittis ligula et lacinia. Aenean sit
           amet felis venenatis, egestas metus vitae, aliquet metus.
         </p>
-      </Section>
-    </div>
+      </div>
+    </Section>
   );
 };

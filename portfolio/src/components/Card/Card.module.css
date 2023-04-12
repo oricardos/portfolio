@@ -1,0 +1,25 @@
+.wrapper {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: nowrap;
+}
+
+.card {
+    width: 176px;
+    height: 176px;
+    padding: 1rem 1.5rem;
+    background-color: var(--second-black);
+    border-radius: 4px;
+    display: flex;
+    align-items: flex-end;
+}
+
+.card:hover {
+    cursor: wait;
+}
+
+.cardText {
+    font-size: var(--font-size-medium);
+    font-weight: bold;
+    margin-top: 1rem;
+}
