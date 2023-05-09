@@ -1,11 +1,11 @@
-import styles from './Links.module.css'
+import styles from './Links.module.css';
 
 export const Links = ({ isFooter }) => {
   const links = [
     {
-      name: "Github",
-      link: "https://github.com/oricardos",
-      icon: "fa-github",
+      name: 'Github',
+      link: 'https://github.com/oricardos',
+      icon: 'fa-github',
     },
     // {
     //   name: "LinkedIn",
@@ -13,9 +13,9 @@ export const Links = ({ isFooter }) => {
     //   icon: "fa-linkedin",
     // },
     {
-      name: "Instagram",
-      link: "https://www.instagram.com/oricardo.dev/",
-      icon: "fa-instagram",
+      name: 'Instagram',
+      link: 'https://www.instagram.com/oricardo.dev/',
+      icon: 'fa-instagram',
     },
     // {
     //   name: "Currículo",
@@ -33,8 +33,12 @@ export const Links = ({ isFooter }) => {
       <>
         <div className="flex gap-x-4">
           {links.map((link, index) => (
-            <a key={index} href={link.link} className={`flex gap-x-1 items-center mb-1 ${styles.links}`}>
-              {link.name === "Currículo" ? (
+            <a
+              key={index}
+              href={link.link}
+              className={`flex gap-x-1 items-center mb-1 ${styles.links}`}
+            >
+              {link.name === 'Currículo' ? (
                 <i className="fas fa-file-code" />
               ) : (
                 <i className={`fab ${link.icon}`} />

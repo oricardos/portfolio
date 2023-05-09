@@ -1,19 +1,19 @@
 // import style from "./Menu.module.css";
-import { MenuItem } from "./MenuItem";
+import { MenuItem } from './MenuItem';
 
 export const Menu = () => {
   const menuItem = [
     {
-      text: "Home",
-      route: "/",
+      text: 'Home',
+      route: '/',
     },
     {
-      text: "Projetos",
-      route: "projects",
+      text: 'Projetos',
+      route: 'projects',
     },
     {
-        text: "Blog",
-        route: "blog",
+      text: 'Blog',
+      route: 'blog',
     },
   ];
 

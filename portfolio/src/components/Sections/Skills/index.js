@@ -1,40 +1,45 @@
-import { Card } from "../../Card";
-import { Section } from "../../Layout/Section";
-import { SectionTitle } from "../../Text/SectionTitle";
-import styles from "./Skills.module.css";
+import { Card } from '../../Card';
+import { Section } from '../../Layout/Section';
+import { SectionTitle } from '../../Text/SectionTitle';
+import styles from './Skills.module.css';
 
-import HTML5 from "../../../assets/logos/html5.svg";
-import Css from "../../../assets/logos/css3.svg";
-import Figma from "../../../assets/logos/figma.svg";
-import JS from "../../../assets/logos/js.svg";
-import ReactJs from "../../../assets/logos/react.svg";
-import ReactNative from "../../../assets/logos/reactnative.svg";
+import HTML5 from '../../../assets/logos/html5.svg';
+import Css from '../../../assets/logos/css3.svg';
+import Figma from '../../../assets/logos/figma.svg';
+import JS from '../../../assets/logos/js.svg';
+import ReactJs from '../../../assets/logos/react.svg';
+import ReactNative from '../../../assets/logos/reactnative.svg';
+import Github from '../../../assets/logos/github.svg';
 
 export const Skills = () => {
   const skills = [
     {
-      name: "HTML5",
+      name: 'HTML5',
       logo: HTML5,
     },
     {
-      name: "Css3",
+      name: 'Css3',
       logo: Css,
     },
     {
-      name: "Figma",
+      name: 'Figma',
       logo: Figma,
     },
     {
-      name: "JS",
+      name: 'JS',
       logo: JS,
     },
     {
-      name: "ReactJs",
+      name: 'ReactJs',
       logo: ReactJs,
     },
     {
-      name: "ReactNative",
+      name: 'ReactNative',
       logo: ReactNative,
+    },
+    {
+      name: 'Github',
+      logo: Github,
     },
   ];
   return (

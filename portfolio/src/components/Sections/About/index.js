@@ -1,6 +1,6 @@
-import { Section } from "../../Layout/Section";
-import { SectionTitle } from "../../Text/SectionTitle";
-import styles from "./About.module.css";
+import { Section } from '../../Layout/Section';
+import { SectionTitle } from '../../Text/SectionTitle';
+import styles from './About.module.css';
 
 export const About = () => {
   return (
