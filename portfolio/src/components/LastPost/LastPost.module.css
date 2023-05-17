@@ -1,0 +1,61 @@
+.lastPost,
+.footer,
+.user,
+.content  {
+    display: flex;
+    gap: 1rem;
+}
+
+.image {
+    max-width: 450px;
+}
+
+.img {
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+    border-radius: .5rem;
+}
+
+.content {
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.title {
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.description {
+    font-size: 1rem;
+}
+
+.tags {
+    font-size: var(--font-size-small);
+    display: inline-block;
+    margin: 1rem 0;
+    margin-right: .5rem;
+    padding: .5rem 1rem;
+    background-color: var(--second-black);
+    border-radius: .25rem
+
+}
+
+.user {
+    align-items: center;
+}
+
+.profilePicture {
+    max-height: 50px;
+    border-radius: 50%;
+}
+
+.footer {
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+.read {
+    font-size: var(--font-size-small);
+    color: #c4c4c4;
+}

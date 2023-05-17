@@ -161,7 +161,7 @@ export const Projects = ({ limited }) => {
     };
 
     useEffect(() => {
-        getRepositories();
+        // getRepositories();
     }, []);
 
     return (
