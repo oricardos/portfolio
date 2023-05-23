@@ -15,7 +15,7 @@ export const Blog = ({ limited }) => {
             .get(xmlUrl)
             .then((response) => {
                 setPosts(response.data);
-                setLastPost(response.data[response.data.length - 1]);
+                setLastPost(response.data[0]);
             })
             .catch((error) => {
                 console.error(error);
@@ -25,6 +25,11 @@ export const Blog = ({ limited }) => {
     useEffect(() => {
         getPostsApi();
     }, []);
+
+    useEffect(() => {
+        console.log(posts)
+    }, [posts])
+
 
     return (
         <Section>
