@@ -4,6 +4,7 @@ import { SectionTitle } from '../../Text/SectionTitle';
 import styles from './Blog.module.css';
 import { Section } from '../../Layout/Section';
 import { LastPost } from '../../LastPost';
+import { Posts } from '../../Posts';
 
 export const Blog = ({ limited }) => {
     const [posts, setPosts] = useState([]);
@@ -15,7 +16,7 @@ export const Blog = ({ limited }) => {
             .get(xmlUrl)
             .then((response) => {
                 setPosts(response.data);
-                setLastPost(response.data[0]);
+                setLastPost(response.data.shift());
             })
             .catch((error) => {
                 console.error(error);
@@ -26,16 +27,12 @@ export const Blog = ({ limited }) => {
         getPostsApi();
     }, []);
 
-    useEffect(() => {
-        console.log(posts)
-    }, [posts])
-
-
     return (
         <Section>
             <div className={styles.wrapper}>
                 <SectionTitle title="Blog" />
                 {lastPost ? <LastPost post={lastPost} /> : null}
+                {posts ? <Posts posts={posts} /> : null}
             </div>
         </Section>
     );
