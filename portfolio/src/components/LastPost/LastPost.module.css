@@ -7,12 +7,13 @@
 }
 
 .image {
-    max-width: 450px;
+    max-height: 450px;
+    flex: 2;
 }
 
 .img {
-
     height: 100%;
+    width: 100%;
     aspect-ratio: 4 / 3;
     object-fit: cover;
     border-radius: .5rem;
@@ -21,10 +22,11 @@
 .content {
     flex-direction: column;
     justify-content: space-between;
+    flex: 1;
 }
 
 .title {
-    font-size: 2rem;
+    font-size: 1.7rem;
     font-weight: 700;
 }
 
