@@ -1,0 +1,20 @@
+.nav,
+.navBg {
+    position: fixed;
+    left: 0;
+    right: 0;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    transition: all ease-in-out .3s;
+}
+
+.nav {
+    background-color: transparent;
+}
+
+.navBg {
+    background-color: rgba(10, 9, 8, .9);
+    z-index: 1000;
+    backdrop-filter: blur(8px);
+}
