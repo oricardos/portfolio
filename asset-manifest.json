@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/portfolio/static/css/main.8c8e787a.css",
+    "main.js": "/portfolio/static/js/main.d2bcdd29.js",
+    "static/media/bg.png": "/portfolio/static/media/bg.30c061466acbcd295123.png",
+    "static/media/react.svg": "/portfolio/static/media/react.873477fdc9e50ee657a19fe763b56169.svg",
+    "static/media/reactnative.svg": "/portfolio/static/media/reactnative.2a2e519291f3a1f70f208ff7fa2cd7f7.svg",
+    "static/media/ux.svg": "/portfolio/static/media/ux.f2298e700a237323f48f5531d3df688e.svg",
+    "static/media/github.svg": "/portfolio/static/media/github.e8e9875591ab17c11c8745069a734454.svg",
+    "static/media/python.svg": "/portfolio/static/media/python.0fcd08141852e99ce490ff395922b407.svg",
+    "static/media/ui.svg": "/portfolio/static/media/ui.3866c164ea87adf1a473501e99d3ee24.svg",
+    "static/media/js.svg": "/portfolio/static/media/js.dcd361f7cab9348d76b21c1913ae1d7e.svg",
+    "static/media/css3.svg": "/portfolio/static/media/css3.0acc23f231e79a7d7971e2dbd41f907d.svg",
+    "static/media/figma.svg": "/portfolio/static/media/figma.0b7300bd02af97f03c1342a81a2c412b.svg",
+    "static/media/django.svg": "/portfolio/static/media/django.4b63eaad320042e8946140b9e77adb4a.svg",
+    "index.html": "/portfolio/index.html",
+    "static/media/html5.svg": "/portfolio/static/media/html5.84a5b150b8ee16466539c9f648f270f3.svg",
+    "main.8c8e787a.css.map": "/portfolio/static/css/main.8c8e787a.css.map",
+    "main.d2bcdd29.js.map": "/portfolio/static/js/main.d2bcdd29.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.8c8e787a.css",
+    "static/js/main.d2bcdd29.js"
+  ]
+}
