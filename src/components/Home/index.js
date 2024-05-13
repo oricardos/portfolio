@@ -12,10 +12,10 @@ export const Home = () => {
     <>
       <Header />
       <Hero />
-      <About />
+      {/* <About /> */}
       <Skills />
       <Learning />
-      <Projects limited />
+      {/* <Projects limited /> */}
       <Blog />
       <Footer />
     </>

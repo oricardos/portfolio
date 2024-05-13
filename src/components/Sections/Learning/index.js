@@ -28,7 +28,7 @@ export const Learning = () => {
     },
   ];
   return (
-    <Section>
+    <Section bg>
       <div className={styles.wrapper}>
         <SectionTitle title="Estudando" />
 
