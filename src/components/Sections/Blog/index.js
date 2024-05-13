@@ -8,7 +8,6 @@ import { Posts } from '../../Posts';
 
 export const Blog = ({ limited }) => {
     const [posts, setPosts] = useState([]);
-    const [lastPost, setLastPost] = useState();
     const xmlUrl = 'https://dev.to/api/articles?username=oricardos';
 
     const getPostsApi = async () => {
@@ -16,7 +15,6 @@ export const Blog = ({ limited }) => {
             .get(xmlUrl)
             .then((response) => {
                 setPosts(response.data);
-                setLastPost(response.data.shift());
             })
             .catch((error) => {
                 console.error(error);
@@ -27,11 +25,15 @@ export const Blog = ({ limited }) => {
         getPostsApi();
     }, []);
 
+    useEffect(() => {
+        console.log(posts)
+    }, [posts])
+
     return (
         <Section>
             <div className={styles.wrapper}>
                 <SectionTitle title="Blog" />
-                {lastPost ? <LastPost post={lastPost} /> : null}
+                {/* {lastPost ? <LastPost post={lastPost} /> : null} */}
                 {posts ? <Posts posts={posts} /> : null}
             </div>
         </Section>

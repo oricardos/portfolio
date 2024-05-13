@@ -8,7 +8,7 @@ export const Layout = () => {
   return (
     <>
       <Header />
-      <Container>
+      <Container className="h-screen">
         <Outlet />
       </Container>
       <Footer />

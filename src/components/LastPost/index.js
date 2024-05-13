@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import styles from './LastPost.module.css';
 
 export const LastPost = ({ post }) => {
@@ -13,7 +14,9 @@ export const LastPost = ({ post }) => {
             <div className={styles.content}>
                 <div>
                     <span>{post.readable_publish_date}</span>
-                    <h2 className={styles.title}>{post.title}</h2>
+                    <Link to={`/blog/${post.slug}`}>
+                        <h2 className={styles.title}>{post.title}</h2>
+                    </Link>
                     {post.tag_list.map((tag, index) => (
                         <a
                             href={`https://dev.to/t/${tag}`}
