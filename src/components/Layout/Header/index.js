@@ -28,11 +28,10 @@ export const Header = () => {
     }, []);
 
     return (
-        <div className={menuBackground ? styles.navBg : styles.nav}>
+        <div>
             <Container>
-                <div className="flex justify-between items-center h-16 min-h-full w-full">
+                <div className="flex justify-center items-center h-16 min-h-full w-full">
                     <Logo />
-                    <Menu />
                 </div>
             </Container>
         </div>

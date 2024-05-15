@@ -25,10 +25,6 @@ export const Blog = ({ limited }) => {
         getPostsApi();
     }, []);
 
-    useEffect(() => {
-        console.log(posts)
-    }, [posts])
-
     return (
         <Section>
             <div className={styles.wrapper}>

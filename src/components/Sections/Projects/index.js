@@ -148,7 +148,6 @@ export const Projects = ({ limited }) => {
             );
 
             const repositories = response.data;
-            console.log(repositories);
 
             // Verifique se há mais páginas de resultados
             if (repositories.length === perPage) {
