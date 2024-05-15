@@ -8,7 +8,7 @@ import Bg from '../../../assets/decs/bg.png';
 export const Hero = () => {
     return (
         <Section bgImg={Bg}>
-            <div className="h-screen flex flex-col md:flex-row gap-6 justify-center items-center">
+            <div className="h-[calc(100vh-100px)] flex flex-col md:flex-row gap-6 justify-center items-center">
                 <div className="mt-20">
                     <MainTitle />
                     <Summary />

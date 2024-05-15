@@ -20,10 +20,6 @@ export const BlogView = () => {
         getPostById();
     }, []);
 
-    useEffect(() => {
-        console.log({ post });
-    }, [post]);
-
     return (
         <>
             <div className="mt-[100px] space-y-10">
