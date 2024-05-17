@@ -12,7 +12,7 @@ function App() {
         <div className={style.__wrapper}>
             <Router>
                 <Routes>
-                    <Route path="/portfolio" element={<Home />} />
+                    <Route path="/" element={<Home />} />
                     <Route path="/" element={<Layout />}>
                         <Route path="blog">
                             <Route path=":slug" element={<BlogView />} />
