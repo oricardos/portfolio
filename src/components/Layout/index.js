@@ -5,13 +5,13 @@ import { Container } from '../Container';
 // import style from './Layout.module.css'
 
 export const Layout = () => {
-  return (
-    <>
-      <Header />
-      <Container>
-        <Outlet />
-      </Container>
-      <Footer />
-    </>
-  );
+    return (
+        <>
+            <Header />
+            <Container>
+                <Outlet />
+            </Container>
+            <Footer />
+        </>
+    );
 };

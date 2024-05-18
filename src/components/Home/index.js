@@ -8,14 +8,14 @@ import { Projects } from '../Sections/Projects';
 import { Blog } from '../Sections/Blog';
 
 export const Home = () => {
-  return (
-    <>
-      <Header />
-      <Hero />
-      <Skills />
-      <Learning />
-      <Blog />
-      <Footer />
-    </>
-  );
+    return (
+        <>
+            <Header />
+            <Hero />
+            <Skills />
+            <Learning />
+            <Blog />
+            <Footer />
+        </>
+    );
 };
