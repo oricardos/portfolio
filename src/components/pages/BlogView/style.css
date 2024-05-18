@@ -1,0 +1,19 @@
+.progress {
+    animation:scroll 1ms ease-in-out;
+    animation-timeline: scroll();
+    background-color: var(--gold);
+    transform-origin: left;
+    height: 16px;
+    inset:0;
+    position: fixed;
+}
+
+@keyframes scroll {
+    from {
+        scale: 0 1
+    }
+
+    to {
+        scale: 1 1;
+    }
+}

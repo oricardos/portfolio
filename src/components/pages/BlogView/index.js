@@ -3,6 +3,7 @@ import React, { useEffect, useState } from 'react';
 import { Link, useLocation, useParams } from 'react-router-dom';
 import { Header } from '../../Layout/Header';
 import { formattedDate } from '../../../utils/formattedDate';
+import './style.css'
 
 export const BlogView = () => {
     const { slug } = useParams();
@@ -49,6 +50,7 @@ export const BlogView = () => {
 
     return (
         <>
+        <div className='progress' />
             <div className="mt-[100px] space-y-10">
                 <div className="flex justify-between items-end">
                     <div className="flex gap-4 items-center">
