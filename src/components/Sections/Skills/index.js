@@ -12,43 +12,43 @@ import ReactNative from '../../../assets/logos/reactnative.svg';
 import Github from '../../../assets/logos/github.svg';
 
 export const Skills = () => {
-  const skills = [
-    {
-      name: 'HTML5',
-      logo: HTML5,
-    },
-    {
-      name: 'Css3',
-      logo: Css,
-    },
-    {
-      name: 'Figma',
-      logo: Figma,
-    },
-    {
-      name: 'JS',
-      logo: JS,
-    },
-    {
-      name: 'ReactJs',
-      logo: ReactJs,
-    },
-    {
-      name: 'ReactNative',
-      logo: ReactNative,
-    },
-    {
-      name: 'Github',
-      logo: Github,
-    },
-  ];
-  return (
-    <Section>
-      <div className={styles.wrapper}>
-        <SectionTitle title="Skills" />
+    const skills = [
+        {
+            name: 'HTML5',
+            logo: HTML5,
+        },
+        {
+            name: 'Css3',
+            logo: Css,
+        },
+        {
+            name: 'Figma',
+            logo: Figma,
+        },
+        {
+            name: 'JS',
+            logo: JS,
+        },
+        {
+            name: 'ReactJs',
+            logo: ReactJs,
+        },
+        {
+            name: 'ReactNative',
+            logo: ReactNative,
+        },
+        {
+            name: 'Github',
+            logo: Github,
+        },
+    ];
+    return (
+        <Section>
+            <div className={styles.wrapper}>
+                <SectionTitle title="Skills" />
 
-        <Card content={skills} />
-      </div>
-    </Section>
-  );
+                <Card content={skills} />
+            </div>
+        </Section>
+    );
 };

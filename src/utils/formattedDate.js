@@ -1,5 +1,4 @@
 export const formattedDate = (date) => {
-
     // Converting to a date object
     const dateObject = new Date(date);
 

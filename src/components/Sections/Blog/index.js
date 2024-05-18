@@ -9,12 +9,12 @@ import { Skeleton } from '../../Skeleton';
 
 export const Blog = ({ limited }) => {
     const [posts, setPosts] = useState([]);
-    const [loading, setLoading] = useState(false)
-    const [error, setError] = useState(false)
+    const [loading, setLoading] = useState(false);
+    const [error, setError] = useState(false);
     const xmlUrl = 'https://dev.to/api/articles?username=oricardos';
 
     const getPostsApi = async () => {
-        setLoading(true)
+        setLoading(true);
         await axios
             .get(xmlUrl)
             .then((response) => {
@@ -22,12 +22,13 @@ export const Blog = ({ limited }) => {
             })
             .catch((error) => {
                 console.error(error);
-                setError(true)
-            }).finally(() => {
-                setLoading(false)
+                setError(true);
+            })
+            .finally(() => {
+                setLoading(false);
             });
 
-            setLoading(false)
+        setLoading(false);
     };
 
     useEffect(() => {
@@ -39,11 +40,20 @@ export const Blog = ({ limited }) => {
             <div className={styles.wrapper}>
                 <SectionTitle title="Blog" />
                 {loading && <LoadingPost />}
-                {!loading && error ? <div className='flex gap-[8px]'>
-                    <p>Você pode acessar meu artigos em:</p>
-                    <a className='text-yellow-500 font-bold hover:underline transition-all' href="https://dev.to/oricardos" target='_blank' rel="noopener noreferrer">dev.to/oricardos</a>
-                </div> : null}
-                
+                {!loading && error ? (
+                    <div className="flex gap-[8px]">
+                        <p>Você pode acessar meu artigos em:</p>
+                        <a
+                            className="text-yellow-500 font-bold hover:underline transition-all"
+                            href="https://dev.to/oricardos"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            dev.to/oricardos
+                        </a>
+                    </div>
+                ) : null}
+
                 {posts ? <Posts posts={posts} /> : null}
             </div>
         </Section>

@@ -3,6 +3,7 @@ import React, { useEffect, useState } from 'react';
 import { Link, useLocation, useParams } from 'react-router-dom';
 import { Header } from '../../Layout/Header';
 import { formattedDate } from '../../../utils/formattedDate';
+import './style.css'
 
 export const BlogView = () => {
     const { slug } = useParams();
@@ -49,6 +50,7 @@ export const BlogView = () => {
 
     return (
         <>
+        <div className='progress' />
             <div className="mt-[100px] space-y-10">
                 <div className="flex justify-between items-end">
                     <div className="flex gap-4 items-center">
@@ -90,32 +92,39 @@ export const BlogView = () => {
                     >
                         <div className="flex flex-col">
                             <img
-                                className={`rounded-lg ${!nextPost ? 'max-w-[50%]' : ''}`}
+                                className={`rounded-lg ${
+                                    !nextPost ? 'max-w-[50%]' : ''
+                                }`}
                                 src={previousPost.cover_image}
                                 alt="article cover"
                             />
-                            <h5 className='font-bold mt-3'>{previousPost.title}</h5>
+                            <h5 className="font-bold mt-3">
+                                {previousPost.title}
+                            </h5>
                         </div>
                     </Link>
                 )}
                 {nextPost && (
                     <>
                         <Link
-                        className="flex"
-                        to={`/blog/${nextPost.slug}`}
-                        state={{ id: nextPost.id }}
-                    >
-                        <div className="flex flex-col">
-                            <img
-                                className={`rounded-lg ${!previousPost ? 'max-w-[50%]' : ''}`}
-                                src={nextPost.cover_image}
-                                alt="article cover"
-                            />
-                            <h5 className='font-bold mt-3'>{nextPost.title}</h5>
-                        </div>
-                    </Link>
+                            className="flex"
+                            to={`/blog/${nextPost.slug}`}
+                            state={{ id: nextPost.id }}
+                        >
+                            <div className="flex flex-col">
+                                <img
+                                    className={`rounded-lg ${
+                                        !previousPost ? 'max-w-[50%]' : ''
+                                    }`}
+                                    src={nextPost.cover_image}
+                                    alt="article cover"
+                                />
+                                <h5 className="font-bold mt-3">
+                                    {nextPost.title}
+                                </h5>
+                            </div>
+                        </Link>
                     </>
-                    
                 )}
             </div>
         </>
