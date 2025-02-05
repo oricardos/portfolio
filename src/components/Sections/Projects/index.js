@@ -82,16 +82,16 @@ export const Projects = ({ limited }) => {
             tecs: ['django, jinja'],
             reverse: true,
         },
-        {
-            title: 'Desafio Onidevs',
-            src: '',
-            description:
-                'CRUD criado com Python + Django para o Desafio Onidevs da Onimusic.',
-            repo: 'https://github.com/oricardos/Desafio-Onidevs',
-            demo: '',
-            tecs: ['django, jinja'],
-            reverse: false,
-        },
+        // {
+        //     title: 'Desafio Onidevs',
+        //     src: '',
+        //     description:
+        //         'CRUD criado com Python + Django para o Desafio Onidevs da Onimusic.',
+        //     repo: 'https://github.com/oricardos/Desafio-Onidevs',
+        //     demo: '',
+        //     tecs: ['django, jinja'],
+        //     reverse: false,
+        // },
         {
             title: 'Twitch App - Clone',
             src: '',

@@ -3,7 +3,7 @@ export const Summary = () => {
         <>
             <h3 className="mb-6 text-xl md:text-2xl">
                 Formado em Análise e desenvolvimento de sistemas, atualmente
-                trabalho como <b>Analista de Sistemas</b> na Onimusic.
+                trabalho como <b>Desenvolvedor Front-end</b>.
             </h3>
         </>
     );
